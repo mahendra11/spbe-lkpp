@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPBE LKPP</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    .swiper-container {
+      width: 100%;
+      height: 400px;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-blue-800 text-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">SPBE LKPP</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#beranda" class="hover:underline">Beranda</a></li>
+          <li><a href="#tentang" class="hover:underline">Tentang</a></li>
+          <li><a href="#regulasi" class="hover:underline">Regulasi</a></li>
+          <li><a href="#dokumen" class="hover:underline">Dokumen</a></li>
+          <li><a href="#kontak" class="hover:underline">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Slider Section -->
+  <section id="beranda" class="bg-white">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Gedung_LKPP.jpg" alt="Gedung LKPP 1"></div>
+        <div class="swiper-slide"><img src="https://www.lkpp.go.id/v3/images/news/default-news.jpg" alt="Gedung LKPP 2"></div>
+        <div class="swiper-slide"><img src="https://www.lkpp.go.id/v3/images/news/lkpp2020.jpg" alt="Gedung LKPP 3"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Tentang SPBE -->
+  <section id="tentang" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-semibold text-center mb-6">Tentang SPBE LKPP</h3>
+      <p class="text-gray-700 text-center max-w-3xl mx-auto">SPBE merupakan inisiatif nasional untuk mendorong efisiensi, transparansi, dan akuntabilitas dalam penyelenggaraan pemerintahan. LKPP berkomitmen mengimplementasikan SPBE secara menyeluruh dan berkelanjutan.</p>
+    </div>
+  </section>
+
+  <!-- Regulasi -->
+  <section id="regulasi" class="py-16">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-semibold text-center mb-6">Regulasi Terkait SPBE</h3>
+      <ul class="max-w-3xl mx-auto list-disc list-inside text-gray-700">
+        <li>Perpres No. 95 Tahun 2018 tentang SPBE</li>
+        <li>Permen PANRB No. 5 Tahun 2020 tentang Arsitektur SPBE</li>
+        <li>Keputusan Kepala LKPP tentang Rencana SPBE LKPP</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Dokumen SPBE -->
+  <section id="dokumen" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-semibold text-center mb-6">Dokumen SPBE</h3>
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white p-4 shadow rounded">
+          <h4 class="font-semibold text-lg">Arsitektur SPBE LKPP</h4>
+          <p class="text-gray-600 mb-2">Dokumen arsitektur sistem informasi pemerintahan di LKPP.</p>
+          <a href="#" class="text-blue-600 hover:underline">Unduh</a>
+        </div>
+        <div class="bg-white p-4 shadow rounded">
+          <h4 class="font-semibold text-lg">Peta Rencana SPBE</h4>
+          <p class="text-gray-600 mb-2">Rencana jangka menengah dan panjang implementasi SPBE.</p>
+          <a href="#" class="text-blue-600 hover:underline">Unduh</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-2xl font-semibold mb-6">Kontak</h3>
+      <p class="text-gray-700 mb-2">Lembaga Kebijakan Pengadaan Barang/Jasa Pemerintah</p>
+      <p class="text-gray-700 mb-2">Jl. Epicentrum Tengah Lot 11-B, Kuningan, Jakarta Selatan</p>
+      <p class="text-gray-700">Email: <a href="mailto:spbe@lkpp.go.id" class="text-blue-600 hover:underline">spbe@lkpp.go.id</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white text-center py-4">
+    <p>&copy; 2025 SPBE LKPP. Seluruh hak cipta dilindungi.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
